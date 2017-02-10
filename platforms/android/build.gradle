@@ -150,7 +150,6 @@ task cdvPrintProps << {
 }
 
 android {
-    useLibrary 'org.apache.http.legacy'
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
