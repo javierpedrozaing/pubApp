@@ -1,0 +1,147 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"SocialSharing\"><param name=\"android-package\" value=\"nl.xservices.plugins.SocialSharing\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.publitellapp.app"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/nl.x-services.plugins.socialsharing/www/SocialSharing.js",
+            "id": "nl.x-services.plugins.socialsharing.SocialSharing",
+            "pluginId": "nl.x-services.plugins.socialsharing",
+            "clobbers": [
+                "window.plugins.socialsharing"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+            "id": "org.apache.cordova.dialogs.notification",
+            "pluginId": "org.apache.cordova.dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.dialogs/www/android/notification.js",
+            "id": "org.apache.cordova.dialogs.notification_android",
+            "pluginId": "org.apache.cordova.dialogs",
+            "merges": [
+                "navigator.notification"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+            "id": "org.apache.cordova.splashscreen.SplashScreen",
+            "pluginId": "org.apache.cordova.splashscreen",
+            "clobbers": [
+                "navigator.splashscreen"
+            ]
+        },
+        {
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/network.js",
+            "id": "org.apache.cordova.network-information.network",
+            "pluginId": "org.apache.cordova.network-information",
+            "clobbers": [
+                "navigator.connection",
+                "navigator.network.connection"
+            ]
+        },
+        {
+            "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+            "id": "org.apache.cordova.network-information.Connection",
+            "pluginId": "org.apache.cordova.network-information",
+            "clobbers": [
+                "Connection"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "nl.x-services.plugins.socialsharing": "4.3.15",
+        "org.apache.cordova.dialogs": "0.3.0",
+        "org.apache.cordova.geolocation": "0.3.12",
+        "org.apache.cordova.splashscreen": "1.0.0",
+        "cordova-plugin-inappbrowser": "1.0.0",
+        "org.apache.cordova.network-information": "0.2.15"
+    }
+}
