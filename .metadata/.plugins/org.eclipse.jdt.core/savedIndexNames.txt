@@ -1,0 +1,7 @@
+INDEX VERSION 1.126+C:\Users\Diego\Dropbox\publitell\publitellProject\publitellapp\.metadata\.plugins\org.eclipse.jdt.core
+3072246863.index
+534003609.index
+1375532944.index
+3432627163.index
+2832050797.index
+1945637336.index

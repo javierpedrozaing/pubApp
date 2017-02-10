@@ -1,0 +1,1570 @@
+<html>
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<head>
+<meta charset="utf-8"/>
+<!--<meta name="viewport" content="user-scalable=no, initial-scale=0.75, maximum-scale=1, minimum-scale=0.75, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+<!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi, width=device-width, height=device-height"/>-->
+<meta name="format-detection" content="telephone=no"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<title>PUBLITELL</title>
+<link href="css/home.css" rel="stylesheet" media="all" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/galeria.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/vermas.css"/>
+<link rel="stylesheet" type="text/css" href="css/map.css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/acordeon.css"/>
+<link href="css/flexi.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" media="all" href="css/menu.css"/>
+<link href="css/resultados.css" rel="stylesheet" media="all" type="text/css"/>
+<link href="css/waitMe.min.css" type="text/css" rel="stylesheet"/>
+<link href="css/ayuda.css" rel="stylesheet" type="text/css">
+<link href="css/styleGallery.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen"/> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="js/lib/ui/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/lib/ui/jquery.simpleslider.js"></script>
+<script type="text/javascript" src="js/lib/ui/backstretch.js"></script>
+<script type="text/javascript" src="js/lib/ui/custom.js"></script>
+<script type="text/javascript" src="js/lib/ui/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/lib/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="js/lib/source/jquery.fancybox.css?v=2.1.5" media="screen"/>
+<script type="text/javascript" src="js/lib/ui/jquery.glide.min.js"></script> 
+<script src="js/lib/ui/jquery.blockUI.js"></script>
+<script src="js/lib/ui/jquery-ui.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<!-- jquery mobile -->
+<!--<script src="jquery.mobile/jquery.mobile-1.3.2.js"></script>-->
+<!-- LIBS -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places"></script>
+<script src="js/lib/ui/modernizr.js"></script>
+<script src="js/lib/ui/positionScroll.js"></script>
+<script src="js/lib/ui/underscore-min.js"></script>
+<script src="js/lib/ui/backbone-min.js"></script>
+<script src="js/lib/ui/jquery.flexisel.js"></script>
+<script src="js/lib/ui/autoComplete.js"></script>
+<script src="js/lib/ui/jquery.url.js "></script>
+<script src="js/lib/ui/waitMe.min.js"></script>
+<script src="js/lib/pxloader/PxLoader.js"></script>
+<script src="js/lib/pxloader/PxLoaderImage.js"></script>
+<script src="js/lib/ui/funcionLocal.js"></script>
+</head>
+<body>
+<script>
+    $('.login-control').hide();
+</script>
+<!-- JQUERY -->
+<!-- ESTILOS -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- comienza definicion de plantillas -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- HOME -->
+<div id="home">
+  <header>
+  <div class="cabecera">
+    <div id="contregresar" onclick="backKeyDown(); return false;">
+      <a href="#" id="regresar1"><img alt="regresar" src="img/regresar.png"></a>
+    </div>
+    <img alt="logo" src="img/publitell.png ">
+    <div class="boton is-active" id="botonMostrar">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+    </div>
+    <div class="boton" id="botonOcultar">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="clear">
+  <ul id="ulmenu">
+    <li id="tmenu">
+    <div id="mtitlecon">
+      <div class="imgitem">
+        <img alt="icono menu" src="img/icomenu.png"/>
+      </div>
+      <div class="txtitem">
+        <p>
+          MENÚ
+        </p>
+      </div>
+    </div>
+    </li>
+    <li class="imenu">
+    <a href="#home" id="returnHome">
+    <div class="icontent" id="buscarMenu" style="cursor: pointer;">
+      <div class="imgoption">
+        <img alt="icono menu" src="img/icobuscar.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Buscar
+        </p>
+      </div>
+    </div>
+    </a>
+    </li>
+    <li class="imenu">
+    <div class="icontent" id="reseticontent" style="cursor: pointer;" onclick="window.plugins.socialsharing.share('Encuentra lo que necesitas en Publitell', null, null, 'http://publitell.com/')">
+      <div class="imgoption">
+        <img alt="icono menu" src="img/icocompartir.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Compartir
+        </p>
+      </div>
+    </div>
+    </li>
+    <li class="imenu">
+    <a href="mailto:servicioalcliente@publitell.co?subject=Contacto">
+    <div class="icontent" id="reseticontent" style="cursor: pointer;">
+      <div class="imgoption">
+        <img alt="icono menu" src="img/icocontacto.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Contáctenos
+        </p>
+      </div>
+    </div>
+    </a>
+    </li>
+    <li class="imenu">
+    <div class="ayuda_open icontent" id="ayudaMenu">
+      <div class="imgoption">
+        <img alt="icono menu" src="img/icoayuda.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Ayuda
+        </p>
+      </div>
+    </div>
+    </li>
+    <li class="imenu">
+    <a href="#home">
+    <div class="acerca_open icontent" id="reseticontent">
+      <div class="imgoption"> 
+        <img alt="icono menu" src="img/icoacerca.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Acerca de
+        </p>
+      </div>
+    </div>
+    </a>
+    </li>
+    <li class="imenu">
+    <div class="icontent" onclick="showConfirm(); return false;">
+      <div class="imgoption">
+        <img alt="icono menu" src="img/icosalir.png"/>
+      </div>
+      <div class="txtoption">
+        <p>
+          Salir
+        </p>
+      </div>
+    </div>
+    </li>
+  </ul>
+  </nav>
+
+  <!-- ---- COMIENZA POPUP BUSQUEDA ------>
+      <div id="busquedaAux">
+        <!-- Aqui contenido que se quiera colocar en el popups -->
+        <section id="buscar">
+        <div class="cnt-buscar">
+         
+         <input id="queBuscass"  class="buscass" onkeypress="return myFunction(event);" placeholder="Que Buscas?" type="search">
+          <a id="enviarPop" onclick="tomarValor2()"><article id="btndonde">
+        <img alt="Buscar" src="img/ico-buscar.png"/>
+        </article></a>
+        </div>
+        </section>
+        <section id="donde">
+        <article id="txtdonde">
+        <input placeholder="En Donde?" id="dondeBuscass" onkeypress="return myFunction(event);" class="dondeBuscass" value="" type="search"/>
+        </article>
+        </section>
+        <form>
+          <p style="color:white;">
+          </p>
+        </form>
+        <div id="contentbtnpu">
+          <a id="btncerrarpu"><img alt="" src="img/icon-cerrar.png"/></a>
+        </div>
+      </div>
+  </header>
+  <!---MENU FIN  -->
+
+<!---<script>
+  function tomarValor(){
+    if ($('.dondeBuscas').val()==""){
+            alert("Debe seleccionar una ciudad");
+            $(".dondeBuscas" ).focus();
+            $('.dondeBuscas').css("border", "rgb(211, 153, 26) solid");
+            window.pruebaLocalizacion= $("#localizacion" ).html();
+            if(pruebaLocalizacion!="Buscando, tu ubicación..."){
+              var palabras = pruebaLocalizacion.split(",");
+              $(".dondeBuscas" ).val(palabras[0]);
+            }  
+        } else{
+          console.log("haga busqueda");
+          $('.dondeBuscas').val() == "";
+          $('.dondeBuscas').css("border", "none");
+          $("#enviar").attr("href", "#results");
+        }
+  }
+  function tomarValor2(){
+
+       if ($('.dondeBuscass').val() ==""){
+            alert("Debe seleccionar una ciudad");
+            $( ".dondeBuscass" ).focus();
+            $('.dondeBuscass').css("border", "rgb(211, 153, 26) solid");
+        } else{
+          console.log("haga busqueda");
+          $("#enviarPop").attr("href", "#resultadosAuxiliar");
+        }
+  }
+</script>-->
+    
+   <div id="cargandoEmp">
+</div>
+  <div class="ui-content">
+    <div id="contentContador">
+      <div id="conTri">
+        <img alt="" src="img/tr.png"/>
+      </div>
+      <div id="divisorCaja">
+        <p id="divisor">
+          -
+        </p>
+        <p id="linead">
+          /
+        </p>
+      </div>
+      <div id="dividendoCaja">
+        <p id="dividendo">
+        </p>
+      </div>
+    </div>
+    <div id="contenedor1">
+      <section id="buscar">
+      <div class="cnt-buscar">
+        
+        <input id="queBuscas" class="queBuscas" placeholder="Que Buscas?" type="search"/>
+      
+      <a onclick="tomarValor()"  id="enviar"><article id="btndonde" >
+      <img alt="Buscar" src="img/ico-buscar.png"/>
+      </article></a>
+      </div>
+      </section>
+      <section id="donde">
+      <article id="txtdonde">
+      <input type="search" placeholder="En Donde?" id="dondeBuscas" class="dondeBuscas"  value=""/>
+      </article>
+     
+      </section>
+
+
+      <form>
+        <p style="color:white;" id="localizacion">Buscando, tu ubicación...</p>
+      </form>
+    </div>
+    <div id="contenedor2" >
+
+      <!--<ul id="flexiselDemo3">
+        <li><a href="http://www.wikiplata.com/Geolocation" target="_blank"><img src="img/flexi/icono-bancos.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-estacioneservicios.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-taxi.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-parqueaderos.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-comerciales.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-bares.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-cuadrantes.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-cinema.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-emisoras.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-hotelera.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-tecnologica.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-domicilios.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-educacion.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-construccion.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-odontologica.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-transportes.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-restaurantes.png"/></a></li>
+        <li><a href="#"><img src="img/flexi/icono-saludbelleza.png"/></a></li>
+      </ul>-->
+    </div>
+    <!-- Script Flexisel -->
+    <!-- empieza Galeria -->
+ 
+    <div id="w">
+    <div class="images">
+      
+    </div>
+      <div id="sliderGallery">        
+
+          <figure id="patrocinio">            
+            
+            <a href="http://www.haztemarino.mil.co/" target="_blanck"><img src="img/galeria/banner-de-la-armada.png" alt="dribbble witches" class="banner1"></a>
+            <img src="img/galeria/banner-app-publicidad-pizza.jpg" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-web-app-movil.png" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-app-publicidad-pizza.jpg" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-app-publicidad-pizza.jpg" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-web-app-movil.png" alt="dribbble witches" class="banner1">
+            <a href="http://www.haztemarino.mil.co/" target="_blanck"><img src="img/galeria/banner-de-la-armada.png" alt="dribbble witches" class="banner1"></a>
+            <img src="img/galeria/banner-app-publicidad-pizza.jpg" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-web-app-movil.png" alt="dribbble witches" class="banner1">
+            <img src="img/galeria/banner-app-publicidad-pizza.jpg" alt="dribbble witches" class="banner1">
+            
+          </figure>
+
+        
+      </div>
+      <!-- @end .slider -->
+    </div>
+    <!-- @end #w -->
+      <div id="contBuscar">
+      <section id="buscarCerca">
+      <div class="cerca-buscar">        
+        <input id="queBuscasCerca"  class="queBuscasCerca" placeholder="Que Buscas?" type="search"/>      
+      <a id='cercacerc'>
+      <article id="btndondeCerca">
+      <img alt="Buscar" src="img/ico-buscar.png">
+      </article></a>
+      </div>
+      </section>
+    </div>
+
+    <!-- Termina galeria -->
+    <div id="itemscenter">
+      <div id="submenucon">
+        <ul class="submenu">
+          <li id="option1" class="active option1"></li>
+          <li id="option2" class="option2"></li>
+          <li id="option3" class="sale_open option3"></li>
+          <a href="#busquedaAuxili"><li id="option4" class="option4uno is-active option4"></li></a>
+        </ul>
+      </div>
+      <div id="cargando">
+      </div> 
+
+      <!-- COMIENZA POPUP EMPRESA NO PREMIUM  -->
+        <div id="empresaNoPremium">
+        <div id="salecontent">
+          <img src="img/emotion-sad.png" alt="">
+         <div id="empSinVerMas"></div>
+        </div>
+        <div id="saleexit" class="empresaNoPremium_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+      <!--  COMIENZA POPUP AYUDA -->
+      <div id="ayuda">
+        <div id="salecontent">
+          <img alt="" src="img/proximamente.png"/>
+        </div>
+        <div id="saleexit" class="ayuda_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+
+      <!--  COMIENZA POPUP ENVIARDESACTIVADO -->
+      <div id="enviarDesactivado">
+         <div id="salecontent">
+          <img src="img/emotion-sad.png" alt="">
+         <div id="noInternet"></div>
+        </div>
+        <div id="saleexit" class="empresaNoPremium_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+
+      <!--  COMIENZA POPUP NO TOMA UBICACION PARA TRAA DE RUTAS -->
+      <div id="noUbicacion">
+        <div id="salecontent">
+          <p>Lo Sentimos no podemos ubicarte</p> 
+        </div>
+        <div id="saleexit" class="noUbicacion_close">
+          
+        </div>
+      </div>
+
+      <!-- COMIENZA POPUP NUMEROS DE CONTACTO -->
+      <div id="numerosContacto">
+          <div id="contacerca1">
+            <div id="acercacabecera">
+            </div>
+            <div id="iconoacerca">
+              <img src="img/ico-contacto.png">
+            </div>
+        </div>
+        <div id="infocontent">          
+          <img src="img/ico-tele.png" alt=""><h3 id="telefonoFijoCon"></h3>
+          <img src="img/ico-phone.png" alt=""><h3 id="celularUnoCon"></h3>          
+        </div>
+
+        <div id="acercacerrar" class="numerosContacto_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>    
+      </div>
+      <!--  COMIENZA POPUP INFOMRACION DE CONTACTO -->
+
+
+
+      <!--  COMIENZA POPUP ACERCA -->
+      <div id="acerca">
+        <div id="acercacontent">
+          <div id="contacerca1">
+            <div id="acercacabecera">
+            </div>
+            <div id="iconoacerca">
+              <img src="img/acerca.png"/>
+            </div>
+          </div>
+          <div id="acercacontentinfo">
+            <div class='pagewrap'>
+              <div class='pageblock' id='fullscreen'>
+                <div class='ayudar'>
+                  <div class='ayuda'>
+                    <p>
+                      ACERCA DE
+                    </p>
+                    <div id="ayudacon">
+                      <img src="img/imgacerca.png">
+                      <div id="txtacerca">
+                        <p>
+                          Somos una empresa competitiva en servicios de comunicación e información, encaminada a satisfacer las necesidades de nuestros clientes, a través del mejoramiento continuo en productos y servicios; directorio telefónico físico, virtual y la unidad webfactory en el Meta- Casanare – Arauca – Boyacá.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ayuda'>
+                    <p>
+                      ACERCA DE
+                    </p>
+                    <div id="acercacontacto1">
+                      <div class="acercacontactoimg">
+                        <img src="img/acerca1.png">
+                      </div>
+                      <div class="acercacontactotxt">
+                        <p>
+                          Of: V/cio - Meta
+                        </p>
+                        <p>
+                          Cl. 23 # 37L-27 Br. Teusaca
+                        </p>
+                        <p>
+                          Tel: (8) 681 81 11- 310 766 7353
+                        </p>
+                      </div>
+                    </div>
+                    <div id="acercacontacto2">
+                      <div class="acercacontactoimg">
+                        <img src="img/acerca2.png">
+                      </div>
+                      <div class="acercacontactotxt">
+                        <p>
+                          Of: Yopal - Casanare
+                        </p>
+                        <p>
+                          Cl. 25 # 28 - 40
+                        </p>
+                        <p>
+                          el: 310 766 7353
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ayuda'>
+                    <p>
+                      ACERCA DE
+                    </p>
+                    <div id="acercacontacto1">
+                      <div class="acercacontactoimg">
+                        <img src="img/acerca3.png">
+                      </div>
+                      <div class="acercacontactotxt">
+                        <p>
+                          Of: Tunja - Boyaca
+                        </p>
+                        <p>
+                          Cra 1G # 41A - 12 T.zas de Santa Inés
+                        </p>
+                        <p>
+                          Tel: (8) 740 30 70 - 310 766 7353
+                        </p>
+                      </div>
+                    </div>
+                    <div id="acercacontacto2">
+                      <div class="acercacontactoimg">
+                        <img src="img/acerca4.png">
+                      </div>
+                      <div class="acercacontactotxt">
+                        <p>
+                          Of: Arauca - Arauca
+                        </p>
+                        <p>
+                          Cel: 310 766 7353
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="acercacerrar" class="acerca_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+
+<!-- ---- COMIENZA POPUP INFO EMPRESA ------>
+    <div id="infoEmpresa">
+        <div id="salecontent">
+          <img alt="" src="img/proximamente.png"/>
+        </div>
+        <div id="saleexit" class="sale_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+        <!--  <button class="sale_close">Proximamente</button>-->
+      </div>
+
+      
+      <!-- ---- COMIENZA POPUP SALE ------>
+      <div id="sale">
+        <div id="salecontent">
+          <img alt="" src="img/proximamente.png"/>
+        </div>
+        <div id="saleexit" class="sale_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+        <!--  <button class="sale_close">Proximamente</button>-->
+      </div>
+      <!-- ---- COMIENZA POPUP CONTACTO------>
+      <div id="info">
+        <div id="contacerca1">
+            <div id="acercacabecera">
+            </div>
+            <div id="iconoacerca">
+              <img src="img/ico-contacto.png">
+            </div>
+        </div>
+        <div id="infocontent">
+          <img src="img/ico-location.png" id="EmpresaDir" alt=""><h3 id="DirEmpresa"></h3>          
+          <img src="img/ico-tele.png" alt=""><h3 id="telefonoFijo"></h3>
+          <img src="img/ico-phone.png" alt=""><h3 id="celularUno"></h3>          
+          <img src="img/ico-mensaje.png" alt=""><h3 id="email"></h3>
+          <img src="img/ico-web.png" alt=""><h3 id="webs"></h3>
+        </div>
+
+        <div id="acercacerrar" class="info_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+
+
+
+      <div id="chat">
+        <div id="salecontent">
+          <img alt="" src="img/proximamente.png"/>
+        </div>
+        <div id="saleexit" class="chat_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+      <div id="chatResultado">
+        <div id="salecontent">
+          <img alt="" src="img/proximamente.png"/>
+        </div>
+        <div id="saleexit" class="chatResultado_close">
+          <img alt="" src="img/cerrarr.png"/>
+        </div>
+      </div>
+    </div>
+    <div id='mapavista'>
+    </div>      
+     
+    <div id="noresultados">
+      <div id="imgalerta">
+        <img src="img/boton-mensaje1.png">
+        <img src="img/emotion-sad.png">
+      </div>
+      <div id="textalerta">
+        <p>No se encontraron resultados</p>
+        <p id="noResulta"></p>
+        <br/>
+        <p>Por favor verifique la <strong>ciudad</strong> y el <strong>criterio de búsqueda</strong></p>
+        
+      </div>
+      <img src="img/emotion-happy.png" alt="" >
+        <a href="#home">
+          <div id="nuevaBusqueda">
+            <p>Realice otra búsqueda</p>
+          </div>
+        </a>
+      
+    </div>
+    
+ 
+
+    
+    <!--  <div id="footerfun" data-position="fixed">-->
+    <footer>
+ 
+<div id="btnchat" class="chat_open">
+      <div class="footercon1">
+        <img alt="chat" src="img/chat.png">
+      </div>
+      <div class="footercon2">
+        <p>
+          CHAT
+        </p>
+      </div>
+    </div>
+    <a  id="link" href='#cercademihome' >
+    <div id="btncerca"  style="cursor: pointer;">
+      <div class="footercon1">
+        <img alt="chat" src="img/cerca.png">
+      </div>
+      <div class="footercon2">
+        <p>
+          CERCA DE MI
+        </p>
+      </div>
+    </div>
+    </a>
+    <a  id="link2" href='#cercademi' >
+    <div id="btncerca"  style="cursor: pointer;">
+      <div class="footercon1">
+        <img alt="chat" src="img/cerca.png">
+      </div>
+      <div class="footercon2">
+        <p>
+          CERCA DE MI
+        </p>
+      </div>
+    </div>
+    </a>
+    <a  id="link3" >
+    <div id="btncercaDesactivado" style="cursor: pointer;">
+      <div class="footercon1">
+        <img alt="chat" src="img/cerca.png">
+      </div>
+      <div class="footercon2">
+        <p>
+          CERCA DE MI
+        </p>
+      </div>
+    </div>
+    </a>
+    <a href="#comoLlegar">
+    <p id='latitud' style="display:none"></p>
+    <p id='longitud' style="display:none"></p>
+    <p id='nombreEmp' style="display:none"></p>
+    <div id="btnllevame" style="cursor: pointer;">
+      <div class="footercon1">
+        <img alt="chat" src="img/ico-como-llegar.png">
+      </div>
+      <div class="comollegar">
+        <p style="margin-top:-7px;">
+          Como llegar
+        </p>
+      </div>
+      </a>
+    </div>
+
+  
+    <a id="resultadosCerca" style="display:none;"  href="#resultadosCerca">
+<img src="img/submenu/icon-list-black.png" alt="">
+  <p>ir a lista</p>
+</a>
+    </footer>
+    <!--<a href="#maps" id="verMapa">Maps</a>-->
+    <!--  </div> -->
+  </div>
+</div>
+<!-- CIERRA HOME -->
+<!-- GALERIA GUIAS -->
+
+
+<!-- ////////////////////////////////TEMPLATES //////////////////-->
+<img alt="" src=""/>
+<script src="js/lib/ui/jquery.popupoverlay.js"></script>
+<script src="js/lib/ui/jquery.hamburger.js"></script>
+<!-- SCRIPT GALERIA SECCIONES -->
+<script type="text/javascript">
+</script>
+
+
+<!--  COMIENZA VISTA RESULTADOS -->
+<script type="text/template" id="resultadosTemplatePremium"> 
+
+
+<!-- COMIENZA PLAN PREMIUM-->   
+          
+<a href="#vermas/<%= title %>/<%= sucursal %>/<%= empresa %>/<%= latitud %>/<%= longitud %>/<%= direccion %>/<%= telefono %>/<%= celular1 %>/<%= directo %>/<%= email %>/<%= web %>/<%= barrio %>">
+<section class="contentr1" id="section-1" >
+
+  <article id="contentcab">
+  <b style="color:#000;"><%= cont %>.</b><b style="color:#000;"><%= title %></b>
+  </article>
+  <article id="contentlog">
+  
+      <img alt='' src='<%= logo %>'/>  
+
+  </article>
+  <article id="contentinfo">
+    <article id="direccion">
+    <p><img alt="" src="img/marcador1.png"/><%= direccion %></p>
+    </article>
+    <article id="direccion2">
+    <p  style="color:#000;"><%= pais %>, <%= departamento %>, <%= municipio %>, <%= barrio%></p>
+    </article>
+    <article id="telefono">
+    <p><img alt="" src="img/marcador2.png" style="margin-right:3px;"/><a href="tel:<%= telefono %>"><%= telefono %></a><a href="tel:<%= celularLlamar %>"><%= celular1 %></a></p>
+    </article>
+    <a href="mailto:<%= email %>?subject=Contacto"><article id="correo">
+    <p><img alt="" src="img/marcador3.png" style="margin-right:3px;"/><%= email %></p>
+    </article></a>
+    <a href="#" onclick="window.open('http://<%= web %>', '_system');"><article id="web">
+    <p style="color:#000;"><img alt="" src="img/marcador4.png" style="margin-right:3px;"/><%= web %></p>
+    </article></a>
+  </article>
+
+   <a href="#vermas/<%= title %>/<%= sucursal %>/<%= empresa %>/<%= latitud %>/<%= longitud %>/<%= direccion %>/<%= telefono %>/<%= celular1 %>/<%= directo %>/<%= email %>/<%= web %>/<%= barrio %>">
+        <article id="contentitemsnopago">
+          <article id="item1">
+            <img alt="" src="<%= horario %>"/>
+          </article>
+
+         <article id="item2">
+            <img alt="" src="img/flecha-resultados.png"/>
+          </article>
+
+        </article>
+  </a>
+<article id="ecoIconos">
+    <a href="#mapa/<%= latitud %>/<%= longitud %>/<%= title %>/<%= empresa %>/<%= sucursal %>/<%= imagen %>/<%= direccion %>/<%= departamento %>/<%= municipio %>/<%= barrio %>/<%= telefono %>/<%= celular1 %>/<%= email %>/<%= web %>/<%= plan %>" style="position: relative; height: 50px;"><article id="item2">
+    <img alt="" src="img/icomapa.png"/>
+    </article></a>
+    <article id="item3">
+    <a href="mailto:<%= email %>?subject=Contacto"><img alt="" src="img/icomsj.png"/></a>
+    </article>
+    <article id="item4" class="chatResultado_open">
+    <img alt="" src="img/icochat.png"/>
+    </article>
+</article>
+
+
+</section></a>
+    <!--TERMINA PLAN PREMIUM -->
+
+
+</script>
+<script type="text/template" id="resultadosTemplateDelux"> 
+  
+
+  <!-- COMIENZA PLAN DELUXE -->
+<section class="contentr1" id="section-2">
+
+  <article id="contentcab">
+  <b><%= cont %>.&nbsp;<%= title %></b>
+  </article>
+  <article id="contentlog">  
+    
+    <img alt="" src="<%= logo %>"/>          
+
+  </article>
+  <article id="contentinfo">
+    <article id="direccion">
+    <p><img alt="" src="img/marcador1.png"/><%= direccion%></p>
+    </article>
+    <article id="direccion2">
+    <p  style="color:#000;"><%= pais %>, <%= departamento %>, <%= municipio %>, <%= barrio%></p>
+    </article>
+    <article id="telefono">
+    <p><img alt="" src="img/marcador2.png" style="margin-right:3px;"/><a href="tel:<%= telefono %>"><%= telefono %></a><a href="tel:<%= celularLlamar %>"><%= celular1 %></a></p>
+    </article>
+    <a href="mailto:<%= email %>?subject=Contacto"><article id="correo">
+    <p><img alt="" src="img/marcador3.png" style="margin-right:3px;"/><%= email %></p>
+    </article></a>
+    <a href="#" onclick="window.open('http://<%= web %>', '_system');"><article id="web">
+    <p style="color:#000;"><img alt="" src="img/marcador4.png" style="margin-right:3px;"/><%= web %></p>
+    </article></a>
+  </article>
+  <article id="contentitemsnopago">
+    <article id="item1">    
+      <img alt="" src="<%= horario %>"/>
+    </article>
+  </article>
+
+  <article id="ecoIconos">
+    <a href="#mapa/<%= latitud %>/<%= longitud %>/<%= title %>/<%= empresa %>/<%= sucursal %>/<%= imagen %>/<%= direccion %>/<%= departamento %>/<%= municipio %>/<%= barrio %>/<%= telefono %>/<%= celular1 %>/<%= email %>/<%= web %>/<%= plan %>" style="position: relative; height: 50px;"><article id="item2">
+    <img alt="" src="img/icomapa.png"/>
+    </article></a>
+    <article id="item3">
+    <a href="mailto:<%= title %>?subject=Contacto"><img alt="" src="img/icomsj.png"/></a>
+    </article>
+    <article id="item4" class="chatResultado_open">
+    <img alt="" src="img/icochat.png"/>
+    </article>
+</article>
+</section>
+
+
+  <!-- TERMINA PLAN DELUXE-->
+
+</script>
+
+
+<script type="text/template" id="resultadosTemplateBasico"> 
+  <!-- COMIENZA PLAN BASICO --> 
+<section class="contentr1" id="section-3">
+
+  <article id="contentcab">
+  <b><%= cont %>.&nbsp;<%= title %></b>
+  </article>
+<article id="contentinfo" class="noimg">
+    <article id="direccion">
+    <p><img alt="" src="img/marcador1.png"/><%= direccion%></p>
+    </article>
+    <article id="direccion2">
+    <p  style="color:#000;"><%= pais %>, <%= departamento %>, <%= municipio %>, <%= barrio%></p>
+    </article>
+    <article id="telefono">
+    <p><img alt="" src="img/marcador2.png" style="margin-right:3px;"/><a href="tel:<%= telefono %>"><%= telefono %></a><a href="tel:<%= celularLlamar %>"><%= celular1 %></a></p>
+    </article>
+    <a href="mailto:<%= email %>?subject=Contacto"><article id="correo">
+    <p><img alt="" src="img/marcador3.png" style="margin-right:3px;"/><%= email %></p>
+    </article></a>
+    <a href="#" onclick="window.open('http://<%= web %>', '_system');"><article id="web">
+    <p style="color:#000;"><img alt="" src="img/marcador4.png" style="margin-right:3px;"/><%= web %></p>
+    </article></a>
+  </article>
+  <article id="contentitemsnopago">   
+    <article id="item1">    
+      <img alt="" src="<%= horario %>"/>
+    </article>
+  </article>
+
+<article id="ecoIconos">
+    <a href="#mapa/<%= latitud %>/<%= longitud %>/<%= title %>/<%= empresa %>/<%= sucursal %>/<%= imagen %>/<%= direccion %>/<%= departamento %>/<%= municipio %>/<%= barrio %>/<%= telefono %>/<%= celular1 %>/<%= email %>/<%= web %>/<%= plan %>" style="position: relative; height: 50px;"><article id="item2">
+    <img alt="" src="img/icomapa.png"/>
+    </article></a>
+    <article id="item3">
+    <a href="mailto:<%= title %>?subject=Contacto"><img alt="" src="img/icomsj.png"/></a>
+    </article>
+    <article id="item4" class="chatResultado_open">
+    <img alt="" src="img/icochat.png"/>
+    </article>
+</article>
+</section>
+
+   <!-- TERMINA PLAN BASICO--> 
+
+
+</script>
+
+<script type="text/template" id="resultadosTemplateEconomico"> 
+  <!-- COMIENZA PLAN ECONOMICO -->  
+<section class="contentr1" id="section-4">
+  
+  <article id="contentcab">
+  <b><%= cont %>.&nbsp;<%= title %></b>
+  </article>
+  <article id="contentinfo" class="noimg">
+    <article id="direccion">
+    <p><img alt="" src="img/marcador1.png"/><%= direccion%></p>
+    </article>
+    <article id="direccion2">
+    <p  style="color:#000;"><%= pais %>, <%= departamento %>, <%= municipio %>, <%= barrio%></p>
+    </article>
+    <article id="telefono">
+    <p><img alt="" src="img/marcador2.png" style="margin-right:3px;"/><a href="tel:<%= telefono %>"><%= telefono %></a><a href="tel:<%= celularLlamar %>"><%= celular1 %></a></p>
+    </article> 
+  </article>
+  <article id="contentitemsnopago">
+   <article id="item1">    
+      <img alt="" src="<%= horario %>"/>
+    </article>
+  </article>
+  <article id="ecoIconos">
+   <a href="#mapa/<%= latitud %>/<%= longitud %>/<%= title %>/<%= empresa %>/<%= sucursal %>/<%= imagen %>/<%= direccion %>/<%= departamento %>/<%= municipio %>/<%= barrio %>/<%= telefono %>/<%= celular1 %>/<%= email %>/<%= web %>/<%= plan %>" style="position: relative; height: 50px;"><article id="item2">
+    <img alt="" src="img/icomapa.png"/>
+    </article></a>
+    <article id="item3">
+    <a href="mailto:<%= title %>?subject=Contacto"><img alt="" src="img/icomsj.png"/></a>
+    </article>
+  <article>
+</section>
+
+  <!-- TERMINA PLAN ECONOMICO--> 
+
+</script>
+
+<script type="text/template" id="resultadosTemplateNoPago"> 
+
+<!--COMIENZA PLAN NO PAGO -->  
+<section class="contentr1" id="section-5">
+
+  <article id="contentcabnopago">
+  <b><%= cont %>.&nbsp;<%= title %></b>
+  </article>
+  <article id="contentinfo" class="noimg">
+
+    <article id="direccion">
+    <p><img alt="" src="img/marcador5.png"/><%= direccion%></p>
+    </article>
+    <article id="direccion2">
+    <p  style="color:#000;"><%= pais %>, <%= departamento %>, <%= municipio %>, <%= barrio%></p>
+    </article>
+    <article id="telefono">
+    <p><img alt="" src="img/marcador6.png"/><%= telefono %> <%= celular1 %></p>
+    </article>  
+
+    <article id="contentitemsnopago">
+
+    <article id="item1">
+      
+      <img alt="" src="<%= horario %>"/>
+
+    </article>
+    
+    <a href="#mapa/<%= latitud %>/<%= longitud %>/<%= title %>/<%= empresa %>/<%= sucursal %>/<%= imagen %>/<%= direccion %>/<%= departamento %>/<%= municipio %>/<%= barrio %>/<%= telefono %>/<%= celular1 %>/<%= email %>/<%= web %>/<%= plan %>" style="position: relative; height: 50px;"><article id="item2">
+    <img alt="" src="img/icomapa.png"/>
+    </article></a>
+  </article>
+    
+  </article>
+
+
+</section>
+  
+  </div>
+  <script type="text/javascript">
+  contadorDinamico();
+
+
+
+  </script>
+
+<!-- TERMINA PLAN NO PAGO -->
+
+<div id="espacioresultados">
+</div>
+
+
+
+
+</script>
+<!-- Template VER MAS -->
+<script type="text/template" id="VerMasTemplate">
+   
+<div id="titulover"><p id="nombreEmpresa">
+
+</p></div>
+
+   <div id="slidergalery">
+        <figure id="figure">             
+            
+        </figure>
+      </div>
+
+<div id="descripver">
+  <img id="logoMision"  hspace="5" vspace="5" style="float: left;" />
+  
+ <p id="mision"></p> </div>
+</div>
+<div class="titulosver">
+  <div class="titulover1">
+  <p>PRODUCTOS Y SERVICIOS</p>
+  </div>
+  <div class="flechaabajo">
+  </div>
+</div>
+      <div class="container">
+        <div class="accordion">
+          <h3 class="panel-titleUno" id="acordeonp1">Producto uno</h3>
+          <div class="panel-contentUno">
+            <p id="desc1"></p>
+             <div id="servicegalery">
+              <figure id="service1">             
+                     
+              </figure>
+            </div>
+          </div>
+          <h3 class="panel-title" id="acordeonp2">Producto dos</h3>
+          <div class="panel-content">
+            <p id="desc2"></p>
+            <div id="servicegalery">
+              <figure id="service2">             
+                     
+              </figure>
+            </div>
+          </div>
+          <h3 class="panel-title" id="acordeonp3">Producto Tres</h3>
+          <div class="panel-content">
+            <p id="desc3"></p>
+              <div id="servicegalery">
+              <figure id="service3">             
+                     
+              </figure>
+            </div>
+          </div>
+      <h3 class="panel-title" id="acordeonp4">Producto Cuatro</h3>
+          <div class="panel-content">
+            <p id="desc4"></p>
+            <div id="servicegalery">
+              <figure id="service4">             
+                     
+              </figure>
+            </div>
+          </div>
+      <h3 class="panel-title" id="acordeonp5">Producto Cinco</h3>
+          <div class="panel-content">
+            <p id="desc5"></p>
+            <div id="servicegalery">
+              <figure id="service5">             
+                     
+              </figure>
+            </div>
+          </div>
+      <h3 class="panel-title" id="acordeonp6">Producto Seis</h3>
+          <div class="panel-content">
+            <p id="desc6"></p>
+            <div id="servicegalery">
+              <figure id="service6">             
+                     
+              </figure>
+            </div>  
+          </div>
+        </div>
+      </div>
+<div class="titulosver">
+  <div class="titulover1">
+  <p>CONTÁCTENOS</p>
+  </div>
+  <div class="flechaabajo">
+  </div>
+</div>
+  <div id="info1ver">
+    <img src="img/vermas1.png" />
+    <p id="vermas11">Km 2 Vía Catama</p>
+    <p id="vermas12"></p>
+    <div class="telephone">
+      <div id="vermas13"></div>
+      <div id="guion1"></div>
+      <div id="vermas20"></div>
+      <div id="guion2"></div>
+      <div id="vermas21"></div>
+    </div>
+  </div>
+
+  
+  <div id="info2ver">
+    
+    
+  </div>
+  <div class="iconosver">
+    <div id="iconover1" class="chat_open">
+      <img src="img/chat-desactivado.png"/>
+    </div>
+    <div id="iconover2">
+      
+    </div>
+    <div id="iconover3">
+      
+    </div>
+    <div id="iconover4">
+
+    </div>
+    <div id="iconover5">
+      
+    </div>
+    <div id="iconover6">
+      
+    </div>
+    <div id="iconover7">
+     
+    </div>
+    <div id="iconover8">
+      <a><img src="img/instagram-desactivado.png"/></a>
+    </div>
+  </div>
+  <div id="mapaver">
+  </div>
+     <div id='streetVista'>
+      </div>
+
+
+<div id="footerllegarVerMas">
+
+    <div id="footerr2">
+      <div id="btnchat2" class="chat_open">
+          <div class="footerchat2">
+            <img alt="chat" src="img/chat.png">
+          </div>
+          <div class="footerchat2">
+            <p>
+                Chat
+            </p>        
+          </div>
+      </div>
+    </div>
+
+  <div id="footerr2" class="info_open">
+    <img  src="img/ico-tel.png">
+    <div class="footercontact2">
+    <p>Contacto</p>
+    </div>
+  </div>
+
+  <a id="aComoLlegar" class="footerr3" href="" style="cursor: pointer;">
+          <div class="footergps2">
+            <img alt="chat" src="img/ico-como-llegar.png">
+          </div>
+          <div class="comollegar">
+            <p>
+                Como llegar
+            </p>
+          </div>
+      </a>
+
+  <a href="#home" id="footerr4" >
+  <div>
+    <img src="img/icon-lupa.png">
+    <div class="footerbuscar22">
+    <p>Nueva Busqueda</p>
+    </div>
+  </div></a>
+
+  
+  
+  </div>
+
+</script>
+
+
+<!-- VIEW COMO LLEGAR  -->
+<script type="text/template" id="comoLlegarTemplate">
+  <div id="map_panel"></div>
+  <div id="submenu2">
+  <ul class="submenuu">
+          <div id="subop1" style="cursor: pointer;"></div>
+          <li id="subop2" class="active"></li>
+          <li id="subop3"></li>
+          <li id="subop4"></li>
+     </ul>
+  </div>
+
+  
+
+ <div id="rutaOps">
+  <div id="titlestart">
+    <img src="img/punt-de-partida.png" />
+  </div>
+    <!--<label for="origen">Origen</label>-->
+  <div ="titlestart"></div>
+    <input type="text" name="origen" id="start" placeholder="calle, ciudad, estado..." />
+    <input type="button" id="draw" value="Buscar&#x00A;Ruta"/></br>
+  
+  <div id="titlestart" style="margin-top:15px;">
+    <img src="img/punt-de-destino.png" />
+  </div>
+  <div id="titlestart" style="height:auto;">
+    <p id="pp"></p>
+  </div>
+  </div>
+  
+  <div>
+    <div id="directions_panel"></div>
+  </div>
+  <div id="streetVistaLlegar">
+  </div>
+
+<div id="footerllegar" >
+
+    <div id="footerr2">
+      <div id="btnchat2" class="chat_open">
+          <div class="footerchat2">
+            <img alt="chat" src="img/chat.png">
+          </div>
+          <div class="footerchat2">
+            <p>
+                Chat
+            </p>        
+          </div>
+      </div>
+    </div>
+
+  <div id="footerr2" class="info_open">
+    <img  src="img/ico-tel.png">
+    <div class="footercontact2">
+    <p>Contacto</p>
+    </div>
+  </div>
+
+ <a class="gpsOpen"  id="footerr2" href="w"><div id="btngps" style="cursor: pointer;">
+          <div class="footergps2">
+            <img alt="chat" src="img/cerca.png">
+          </div>
+          <div class="footergps2">
+            <p>
+                gps
+            </p>
+          </div>
+      </div></a>
+
+
+
+  <div class="footerr3G">
+         <a href="#home" id="footerr4" ><div>
+      <img src="img/icon-lupa.png">
+      <div class="footerbuscar22">
+      <p>Nueva Busqueda</p>
+      </div>
+    </div></a>
+
+  </div>
+ 
+
+</div>
+</script>
+<!-- VER MAPA INDIVIDUAL -->
+<script type="text/template" id="cercaDeMiInicioTemplate">
+
+<div id='mapaEmpresa'>
+
+</div>
+
+<div id="footerMapa" style="display:none;">
+    
+  <a id="rComoLlegar" class="footerr3" href="" style="cursor: pointer;">
+  
+          <div class="">
+            <img alt="chat" src="img/ico-como-llegar.png">
+          </div>
+          <div class="comollegar">
+            <p>
+                Como llegar
+            </p>
+          </div>    
+   </a>
+
+   
+  <a id="mVerMas" href="">    
+      
+          <div class="footericon1">
+            <img alt="chat" src="img/icomenu.png">
+          </div>
+          <div class="footericon2">
+            <p style="margin: 3px;">
+                Ver mas
+            </p>        
+          </div>
+          
+  </a>
+
+   <a class="empresaNoPremium_open" id="mVerMasDesactivado">    
+      
+          <div class="footericon1">
+            <img alt="chat" src="img/icomenu.png">
+          </div>
+          <div class="footericon2">
+            <p>
+                Ver mas
+            </p>        
+          </div>
+          
+  </a>
+   
+   </div>
+</script>
+
+<!-- VER CERCA DE MI INICIO -->
+<script type="text/template" id="empresasCercaInicioTemplate">
+      <div id="mostrarMapa">
+        <p>DIV PARA MOSTRAR MAPA</p>
+      </div>
+      
+</script>
+
+
+<!-- VER CERCA DE MI -->
+<script type="text/template" id="cercaDeMiTemplate">
+  <div id='mapavistacerca'>
+  </div>
+<div id="footerllegar">
+
+    <div id="footerr2">
+      <div id="btnchat2" class="chat_open">
+          <div class="footerchat2">
+            <img alt="chat" src="img/chat.png">
+          </div>
+          <div class="footerchat2">
+            <p>
+                Chat
+            </p>        
+          </div>
+      </div>
+    </div>
+
+  <div id="footerr2" class="info_open">
+    <img  src="img/ico-tel.png">
+    <div class="footercontact2">
+    <p>Contacto</p>
+    </div>
+  </div>
+
+   <div class="btngps" id="footerr2"  style="cursor: pointer;">
+          <div class="footergps2">
+            <img alt="chat" src="img/cerca.png">
+          </div>
+          <div class="footergps2">
+            <p>
+                gps
+            </p>
+          </div>
+      </div>
+
+  <div>
+
+      <a href="#home" id="footerr4"><div>
+      <img src="img/icon-lupa.png">
+      <div class="footerbuscar22">
+      <p>Nueva Busqueda</p>
+      </div>
+    </div></a>
+
+
+  </div>
+</script>
+<!-- VIEW MANAGER -->
+<script src="js/lib/ui/View.js"></script>
+<script src="js/lib/ui/ViewManager.js"></script>
+<!-- Views -->
+<script src="js/views/views.js"></script>
+<script defer src="js/lib/ui/jquery.flexslider.js"></script> 
+<script type="text/javascript">
+ </script>
+
+<script>
+   
+ $(document).ready(function(){
+
+  window.pruebaLocalizacion= $("#localizacion" ).html();
+  console.log("entro a la funcion click");
+
+// busqueda principal
+//doble click para cambiar el focus al campo en donde
+  
+     $("#queBuscas").click(function(){  
+  if ($("#queBuscas" ).val() != "" && $("#queBuscas" ).val().length >2){ 
+      $("#dondeBuscas" ).focus();
+      $('#queBuscas').css("border", "0px solid #eeeeee");
+      $('#dondeBuscas').css("border", "rgb(211, 153, 26) solid");
+      $(".ui-widget-content").hide();
+      }
+    });
+
+  $( "#queBuscas" ).click(function(){    
+    $("footer").css("display", "none");
+  if ($("#queBuscas" ).val() != "" ){  
+      $("#queBuscas" ).focus();
+      
+      }
+    });
+
+$( "#option4" ).click(function(){    
+
+  
+    console.log("entra a busqueda auxilkiar");
+    $("#queBuscass" ).focus();          
+      
+    });  
+  // busqueda popup
+    $( "#queBuscass" ).click(function(){    
+  if ($("#queBuscass" ).val() != "" ){  
+      $("#queBuscass" ).focus();
+      $('#dondeBuscass').css("border", "rgb(211, 153, 26) solid");
+      }
+    });
+  
+
+/*
+  $( "#dondeBuscas" ).click(function() {
+      
+      cambiaImagen();
+    });
+*/
+
+
+ document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    
+$(function(){
+  $('.slider').glide({
+    autoplay: 3000,
+    hoverpause: true, // set to false for nonstop rotate
+    arrowRightText: '&rarr;',
+    arrowLeftText: '&larr;'
+  });
+});
+      //Inicializa plugin
+      $('#my_popup').popup();
+      $('#sale').popup();
+      $('#chat').popup();
+      $('#chatResultado').popup();
+      $('#ayuda').popup();
+      $('#acerca').popup();
+      $('#infoEmpresa').popup();
+      $('#infoContacto').popup();
+      $('#info').popup();
+      $('#empresaNoPremium').popup();
+      $('#enviarDesactivado').popup();
+      $('#noUbicacion').popup();
+      $('#numerosContacto').popup();
+
+
+     
+    /*$("#flexiselDemo3").flexisel({
+         visibleItems: 6,
+         animationSpeed: 700,
+         autoPlay: true,
+         autoPlaySpeed: 2000,            
+         pauseOnHover: true,
+         enableResponsiveBreakpoints: true,
+         responsiveBreakpoints: { 
+             portrait: { 
+                 changePoint:480,
+                 visibleItems: 3
+             }, 
+             landscape: { 
+                 changePoint:640,
+                 visibleItems: 4
+             },
+             tablet: { 
+                 changePoint:768,
+                 visibleItems: 5
+            }
+        }
+    });*/
+
+    $(".submenu > li").click(function(e){
+            var a = e.target.id;
+            //desactivamos seccion y activamos elemento de menu
+            $(".submenu li.active").removeClass("active");
+            $(".submenu #"+a).addClass("active");
+        });
+
+    window.ubica= $("#localizacion").val();
+
+            $('.fancybox').fancybox();
+      $('.fancybox-buttons').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        prevEffect : 'none',
+        nextEffect : 'none',
+        closeBtn  : false,
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          buttons : {}
+        },
+        afterLoad : function() {
+          this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+        }
+      });
+    });
+ </script>
+<!-- GALERIA PATROCINIO -->
+
+<script type="text/javascript">
+function onDeviceReady() {
+        checkConnection();
+    }
+
+        function checkConnection() {
+            var networkState = navigator.connection.type;
+            var states = {};
+            //states[Connection.UNKNOWN]  = 'Unknown connection';
+            //states[Connection.ETHERNET] = 'Ethernet connection';
+            //states[Connection.WIFI]     = 'Su conexion es  WiFi, la velocidad de las busquedas dependera del proveedor del mismo';
+            //states[Connection.CELL_2G]  = 'Su conexion celular esta en una red 2G las busquedas al directorio podrian tardar un poco';
+            //states[Connection.CELL_3G]  = 'Su conexion celular esta en una red 3G las busquedas al directorio podrian no ser tan rapidas';
+            //states[Connection.CELL_4G]  = 'Su conexion celular esta en una red 4G las busquedas al directorio seran casi inmediatas';
+            //states[Connection.CELL]     = 'Cell generic connection';
+            states[Connection.NONE]     = 'Usted no esta conectado a una red que le provea internet';
+            //alert('Tipo de conexion: ' + states[networkState]);
+            if(states[networkState]=='Usted no esta conectado a una red que le provea internet'){
+                $("#enviar" ).addClass("enviarDesactivado_open");
+                $("#enviar").prop("onclick", null);
+                $("#dondeBuscas").removeAttr('class');
+                $("#queBuscas").removeAttr('class');
+                $("#dondeBuscas" ).keypress(function(event) {
+              if(event.which==13) {
+                $('#enviarDesactivado').popup('show');
+              }
+            });
+            $("#queBuscas" ).keypress(function(event) {
+              if(event.which==13) {
+                $('#enviarDesactivado').popup('show');
+              }
+            });
+            }
+        }
+  
+ 
+</script>
+<script>
+window.scrollTo(0,0);
+  function tomarValor(){
+    if ($('.dondeBuscas').val()==""){
+            alert("Debe seleccionar una ciudad");
+            $(".dondeBuscas" ).focus();
+            $('.dondeBuscas').css("border", "rgb(211, 153, 26) solid");
+            window.pruebaLocalizacion= $("#localizacion" ).html();
+            if(pruebaLocalizacion!="Buscando, tu ubicación..."){
+              var palabras = pruebaLocalizacion.split(",");
+              $(".dondeBuscas" ).val(palabras[0]);
+            }  
+        } else{
+          console.log("haga busqueda");
+          $('.dondeBuscas').val() == "";
+          $('.dondeBuscas').css("border", "none");
+          if(validaBusq){
+            $("#enviar").attr("href", "#results");
+            validaBusq = false;
+          }else{
+            validaBusq = true;
+          }
+          
+        }
+  }
+  function tomarValor2(){
+
+       if ($('.dondeBuscass').val() ==""){
+            alert("Debe seleccionar una ciudad");
+            $( ".dondeBuscass" ).focus();
+            $('.dondeBuscass').css("border", "rgb(211, 153, 26) solid");
+        } else{
+          console.log("haga busqueda");
+          $("#enviarPop").attr("href", "#resultadosAuxiliar");
+        }
+  }
+</script>
+
+</body>
+</html>

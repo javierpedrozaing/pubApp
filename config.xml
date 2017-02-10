@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.publitellapp.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>publitellapp</name>
+    <description>
+       Publitell LTDA
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Publitell LTDA Team
+    </author>
+    <content src="index.html" />
+    <preference name="orientation" value="portrait" />
+    <preference name="autorotate" value="false" readonly="true"/> 
+    <access origin="tel:*" launch-external="yes"/>
+<access origin="geo:*" launch-external="yes"/>
+<access origin="mailto:*" launch-external="yes"/>
+<access origin="sms:*" launch-external="yes"/>
+<access origin="market:*" launch-external="yes"/>
+    <access origin="*" />
+</widget>

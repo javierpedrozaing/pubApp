@@ -1,0 +1,241 @@
+
+#directions_panel{
+   	width:90%;
+   	height: auto;
+   	margin:20px auto;
+}
+#rutaOps{
+	text-align: center;
+}
+#rutaOps ul{
+	background: red;
+}
+.adp-directions{
+	width:90% !important ;
+} 
+.adp{
+	display: none !important;
+}
+#titlestart{
+	width: 78%;
+	height: 30px;
+	margin: 0 auto;
+	text-align: left;
+}
+#titlestart p{
+	font-size: 12px;
+	margin-bottom: 0 !important;
+	-webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    margin-left: 18px;
+}
+#start{
+	border: none;
+	height: 35px;
+	width: 70%;
+	border-radius: 10px;
+	background:#E8E8E8;
+	padding-left:15px;
+	vertical-align: top;
+}
+#start::-webkit-input-placeholder{
+	color:#818181;
+	padding-left: 0px;
+}
+
+.adp-list{
+	border:0px !important;
+}
+#draw{
+	border : solid 0px #fff700;
+	border-radius : 7px 6px 6px 6px ;
+	font-size : 14px;
+	color : #ffffff;
+	background : orange;
+	height:35px;
+	vertical-align: top;
+	width: 80px;
+}
+
+.pac-container{
+	border-radius:10px;
+}
+.adp-fullwidth tbody tr td{
+	height: 30px;
+}
+.adp-fullwidth tbody tr td span{
+	
+}
+.adp-fullwidth tbody tr td span b{
+	background: url(../img/marker.png)no-repeat;
+	background-position: 6px 0px;
+}
+.adp-fullwidth tbody tr td span b{
+	padding-left: 30px;
+	display: inline-block;
+	height: 25px;
+	margin-top: 5px;
+}
+
+.adp-listheader{
+	background: #E8E8E8 url(../img/rutas.png) no-repeat !important;
+	color: rgba(230,230,230,0.1);
+	height: 30px;
+}
+
+.ventana{
+	width: 100%;
+	height: 63px;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+}
+
+.imgventana img{
+	width: 50px;
+  float: left;
+}
+.infoventana{
+  
+
+}
+.infoventana, .imgventana{
+	
+	vertical-align: top;
+	  width: 200px;
+	
+}
+.titleventana, .linkventana{
+	
+  width: 100%;
+  height: 18px;
+
+}
+	
+.linkventana {
+text-align: center;
+  top: 15px;  
+  left: 43px;
+}
+.linkventana a{
+	  line-height: 48px;
+  color: orange;
+  padding: 0 8px;
+  text-decoration: underline;
+  display: inline;
+}
+.ventanatxt{
+  text-align: left;
+  top: inherit;
+}
+
+.titleventana p{
+		margin: 0;
+		padding: 0;
+	}
+
+.ventanatxt p{
+	-webkit-margin-before: 0 !important;
+	-webkit-margin-after: 0 !important;
+	font-size: 13px;
+	  margin-left: 93px;
+	height: 0px;
+}
+
+@media only screen and (max-width: 980px){
+	#titlestart{
+		width: 79%;
+	}
+	.ventanatxt{
+		
+	}
+}
+@media only screen and (max-width: 850px){
+	#titlestart{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 750px){
+	#titlestart{
+		width: 81%;
+	}
+	.ventanatxt{
+	
+	}
+}
+@media only screen and (max-width: 650px){
+	#titlestart{
+		width: 83%;
+	}
+}
+@media only screen and (max-width: 550px){
+	#titlestart{
+		width: 86%;
+	}
+
+	.ventanatxt{
+	
+	}
+
+}
+@media only screen and (max-width: 450px){
+	#titlestart{
+		width: 90%;
+	}
+	.ventana{
+	overflow: hidden;
+
+	}
+/*	.infoventana, .ventanatxt{
+		width: 280px;
+	}*/
+	.ventanatxt{
+		text-align: center;
+	}
+	
+}
+@media only screen and (max-width: 425px){
+	.ventana{
+		overflow: hidden;
+		height: 80px;
+	}
+
+
+	.ventanatxt p{
+		margin-left: 73px;
+	}
+}
+
+@media only screen and (max-width: 380px){
+	.infoventana, .ventanatxt{
+		  width: 212px;
+	}
+}
+
+@media only screen and (max-width: 370px){
+	#start{
+		width: 60%;
+	}
+	#titlestart{
+		width: 84%;
+	}
+	
+}
+@media only screen and (max-width: 350px){
+	#start{
+		width: 60%;
+	}
+}
+@media only screen and (max-width: 340px){
+	/*.infoventana, .ventanatxt {
+  		width: 170px;
+	}*/
+}
+@media only screen and (max-width: 330px){
+	#start{
+		width: 67%;
+	}
+	#titlestart{
+		width: 92%;
+	}
+}

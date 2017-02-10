@@ -1,0 +1,153 @@
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+
+}
+
+/* style GALERIA PATROCINIO */
+
+body { margin: 0; overflow-x: hidden;} 
+div#sliderGallery { overflow: hidden; }
+div#sliderGallery figure#patrocinio img { width: 20%; float: left; }
+div#sliderGallery figure#patrocinio { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  display: inline-block;
+  height: 200px;
+  -webkit-animation: 20s slidy; 
+}
+
+
+@media only screen and (max-width: 1950px){
+	div#sliderGallery figure#patrocinio { 
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 1500px){
+	div#sliderGallery figure#patrocinio { 
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	div#sliderGallery figure#patrocinio { 
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	div#sliderGallery figure#patrocinio { 
+		height: 54%;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	div#sliderGallery figure#patrocinio { 
+		height: 80%;
+	}
+}
+@media only screen and (max-width: 650px){
+	div#sliderGallery figure#patrocinio { 
+		height: 70%;
+	}
+}
+@media only screen and (max-width: 500px){
+	div#sliderGallery figure#patrocinio { 
+		height: 55%;
+	}
+}
+@media only screen and (max-width: 400px){
+	div#sliderGallery figure#patrocinio { 
+		height: 44%;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	div#sliderGallery figure#patrocinio { 
+		height: 50%;
+	}
+}
+/* fin style GALERIA PATROCINIO */
+
+
+/* style ver mas empresa */
+
+body { margin: 0; } 
+div#slidergalery { overflow: hidden; }
+div#slidergalery figure img { width: 20%; float: left; }
+div#slidergalery figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  display: inline-block;
+  height: 36%;
+  -webkit-animation: 20s slidy; 
+}
+
+
+@media only screen and (max-width: 1950px){
+	div#slidergalery figure { 
+		height: 85%;
+	}
+}
+
+@media only screen and (max-width: 1500px){
+	div#slidergalery figure { 
+		height: 58%;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	div#slidergalery figure { 
+		height: 49%;
+	}
+}
+
+@media only screen and (max-width: 850px){
+	div#slidergalery figure { 
+		height: 44%;
+	}
+}
+
+@media only screen and (max-width: 750px){
+	div#slidergalery figure { 
+		height: 38%;
+	}
+}
+@media only screen and (max-width: 650px){
+	div#slidergalery figure { 
+		height: 30%;
+	}
+}
+@media only screen and (max-width: 500px){
+	div#slidergalery figure { 
+		height: 30%;
+	}
+}
+@media only screen and (max-width: 400px){
+	div#slidergalery figure { 
+		height: 30%;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	div#slidergalery figure { 
+		height: 20%;
+	}
+}
+/* FIN  style ver mas empresa */
