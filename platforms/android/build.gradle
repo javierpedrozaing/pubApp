@@ -170,6 +170,7 @@ android {
         if (cdvMinSdkVersion != null) {
             minSdkVersion cdvMinSdkVersion
         }
+        versionCode 2
     }
 
     lintOptions {
