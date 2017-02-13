@@ -51,6 +51,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_6
     }
 
+    defaultConfig {
+      versionCode 2
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
