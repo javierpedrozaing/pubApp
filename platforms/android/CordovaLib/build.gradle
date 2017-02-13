@@ -59,4 +59,8 @@ android {
             assets.srcDirs = ['assets']
         }
     }
+
+    defaultConfig {
+      versionCode 2
+    }
 }
